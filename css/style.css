@@ -1,0 +1,34 @@
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.layer{
+
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main-content"
+    "sidebar main-content"
+    "sidebar main-content"
+    "sidebar main-content"
+
+}
+
+.sidebar{
+    grid-area: sidebar;
+    height:100%;
+
+}
+
+.header{
+    grid-area: header;
+}
+.main-content{
+    grid-area: main-content;
+    height:100%;
+}
