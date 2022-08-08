@@ -76,11 +76,14 @@ a, a:hover, a:focus, a:active {
 }
 
 .search input{
-    width: 400px;
+    width: 45vw;
+    border-radius: 10px;
+    margin-left:15px;
 }
 
 .search-header{
-    
+    align-items: center;
+    justify-content: space-between;
 }
 
 .main-content{
