@@ -2,6 +2,7 @@
     --blue: #00a8e8;
     --white: #ffffff;
     --Yellow: #fca311;
+    --gray: rgb(226, 226, 226);
 }
 
 *{
@@ -148,6 +149,8 @@ margin-right:15px;
     grid-template-columns: 1fr 1fr .50fr;
     grid-template-areas: "first first second";
     height:100%;
+    gap:30px;
+    background-color:var(--gray);
 }
 
 .projects{
@@ -158,8 +161,18 @@ margin-right:15px;
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap:10px;
 }
 
 .project{
-    
+    background-color:var(--white);
+    padding:15px;
+}
+
+.icons{
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    margin-top:20px;
+    gap:15px;
 }
