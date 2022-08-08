@@ -73,13 +73,14 @@ a, a:hover, a:focus, a:active {
 .header{
     grid-area: header;
     padding:30px;
-    box-shadow: 3px 1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.75);
 }
 
 .search, 
 .search-header,
 .search-right,
-.profile{
+.profile,
+.profile-greet{
     display:flex;
 }
 
@@ -104,10 +105,61 @@ a, a:hover, a:focus, a:active {
 .profile{
     gap:15px;
     margin-top:15px;
+    align-items:center;
+}
+
+.profile-greet{
+    gap:15px;
+    margin-right:auto;
+}
+
+button{
+    
+	background-color:#2dabf9;
+	border-radius:9px;
+	border:none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+    margin-right:15px;
+}
+
+button:hover{
+    background-color:#0688fa;
+}
+
+button:active{
+    position:relative;
+	top:1px;
+}
+
+.buttons{
+margin-right:15px;
 }
 
 .main-content{
+    padding:30px;
     grid-area: main-content;
+    display:grid;
+    grid-template-columns: 1fr 1fr .50fr;
+    grid-template-areas: "first first second";
     height:100%;
+}
+
+.projects{
+    grid-area: first;
+}
+
+.projects-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.project{
     
 }
